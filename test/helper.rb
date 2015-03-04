@@ -1,4 +1,4 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'test/unit'
 
-require 'ssh_url'
+require 'uri/ssh_git'

@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ssh_url/version'
+require 'uri/ssh_git/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'ssh_url'
-  spec.version       = SshUrl::VERSION
+  spec.name          = 'uri-ssh_git'
+  spec.version       = URI::SshGit::VERSION
   spec.authors       = ['sanemat']
   spec.email         = ['o.gata.ken@gmail.com']
 
   spec.summary       = 'Parse and build ssh format url'
   spec.description   = 'Parse and build ssh format url.'
-  spec.homepage      = 'https://github.com/packsaddle/ruby-ssh_url'
+  spec.homepage      = 'https://github.com/packsaddle/ruby-uri-ssh_git'
   spec.license       = 'MIT'
 
   spec.files         = \
