@@ -2,7 +2,7 @@ require_relative 'helper'
 
 module URI
   module SshGit
-    class TestGit < Test::Unit::TestCase
+    class TestSshGit < Test::Unit::TestCase
       test 'version' do
         assert do
           !::URI::SshGit::VERSION.nil?
