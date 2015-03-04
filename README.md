@@ -1,9 +1,9 @@
-# SshUrl
+# URI::SshGit
 
 [![Gem Version](http://img.shields.io/gem/v/uri-ssh_git.svg?style=flat)](http://badge.fury.io/rb/uri-ssh_git)
 [![Build Status](http://img.shields.io/travis/packsaddle/ruby-uri-ssh_git/master.svg?style=flat)](https://travis-ci.org/packsaddle/ruby-uri-ssh_git)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ssh_url`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/uri/ssh_git`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
 
