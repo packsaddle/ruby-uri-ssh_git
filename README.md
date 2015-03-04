@@ -48,6 +48,25 @@ parsed.host
 parsed.path
 ```
 
+## VS.
+
+```ruby
+# URI
+url = URI.parse('git@github.com:schacon/ticgit.git')
+URI::InvalidURIError: bad URI(is not URI?): git@github.com:schacon/ticgit.git
+
+# Addressable
+url = Addressable::URI.parse('git@github.com:schacon/ticgit.git')
+#=> #<Addressable::URI:0x3fedf48fb430 URI:git@github.com:schacon/ticgit.git>
+url.path #=> "schacon/ticgit.git"
+url.scheme #=> "git@github.com"
+
+url.host #=> nil
+url.userinfo #=> nil
+url.user #=> nil
+url.port #=> nil
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
