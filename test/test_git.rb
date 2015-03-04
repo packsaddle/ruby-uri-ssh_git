@@ -28,6 +28,18 @@ module URI
           end
         end
       end
+      sub_test_case '.git_protocol?' do
+        test 'ssh protocol' do
+          assert do
+            !::URI::SshGit.git_protocol?('git@github.com:packsaddle/ruby-uri-ssh_git.git')
+          end
+        end
+        test 'git protocol' do
+          assert do
+            ::URI::SshGit.git_protocol?('git://github.com/packsaddle/ruby-uri-ssh_git.git')
+          end
+        end
+      end
     end
   end
 end
