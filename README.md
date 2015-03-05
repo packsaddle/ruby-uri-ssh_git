@@ -39,10 +39,10 @@ git_protocol = 'git://github.com/packsaddle/ruby-uri-ssh_git.git'
 
 # Usage
 git_clone_url = '...'
-if ::URI::SshGit.ssh_protocol?(git_clone_url)
+if URI::SshGit.ssh_protocol?(git_clone_url)
   parsed = URI::SshGit.parse(git_clone_url)
 else
-  parsed = URI.passe(git_clone_url)
+  parsed = URI.parse(git_clone_url)
 end
 parsed.host
 parsed.path
