@@ -11,13 +11,5 @@ module URI
       path_part = '/' + path_part unless path_part.start_with?('/')
       Generic.build(userinfo: userinfo, host: host, path: path_part)
     end
-
-    def self.ssh_protocol?(url_string)
-      url_string.include?('@')
-    end
-
-    def self.git_protocol?(url_string)
-      !ssh_protocol?(url_string)
-    end
   end
 end

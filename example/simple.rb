@@ -23,22 +23,3 @@ URI::SshGit.build(
   path: '/packsaddle/ruby-uri-ssh_git.git'
 ).to_s
 #=> 'git@github.com:packsaddle/ruby-uri-ssh_git.git'
-
-# Utility method
-ssh_protocol = 'git@github.com:packsaddle/ruby-uri-ssh_git.git'
-git_protocol = 'git://github.com/packsaddle/ruby-uri-ssh_git.git'
-
-::URI::SshGit.ssh_protocol?(ssh_protocol) #=> true
-::URI::SshGit.git_protocol?(ssh_protocol) #=> false
-::URI::SshGit.ssh_protocol?(git_protocol) #=> false
-::URI::SshGit.git_protocol?(git_protocol) #=> true
-
-# Usage
-git_clone_url = '...'
-if URI::SshGit.ssh_protocol?(git_clone_url)
-  parsed = URI::SshGit.parse(git_clone_url)
-else
-  parsed = URI.parse(git_clone_url)
-end
-parsed.host
-parsed.path
