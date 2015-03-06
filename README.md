@@ -4,6 +4,8 @@
 [![Build Status](http://img.shields.io/travis/packsaddle/ruby-uri-ssh_git/master.svg?style=flat)](https://travis-ci.org/packsaddle/ruby-uri-ssh_git)
 
 ```ruby
+require 'uri/ssh_git'
+
 url = URI::SshGit.parse('git@github.com:packsaddle/ruby-uri-ssh_git.git')
 # => #<URI::SshGit::Generic git@github.com:packsaddle/ruby-uri-ssh_git.git>
 
@@ -47,6 +49,20 @@ url.userinfo #=> nil
 url.user #=> nil
 url.port #=> nil
 ```
+
+## Popular usage
+
+```
+require 'git_clone_url'
+
+ssh_url = 'git@github.com:schacon/ticgit.git'
+
+GitCloneUrl.parse(ssh_url)
+#=> #<URI::SshGit::Generic git@github.com:schacon/ticgit.git>
+#=> {scheme: nil, user: 'git', userinfo: 'git', host: 'github.com', path: '/schacon/ticgit.git' }
+```
+
+see: [packsaddle/ruby-git_clone_url](https://github.com/packsaddle/ruby-git_clone_url)
 
 ## Installation
 
