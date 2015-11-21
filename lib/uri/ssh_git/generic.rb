@@ -3,7 +3,7 @@ module URI
     # @see http://docs.ruby-lang.org/en/2.2.0/URI/Generic.html
     class Generic < ::URI::Generic
       # @example
-      #   URI::SshGit.build(
+      #   Generic.build(
       #     userinfo: 'git',
       #     host: 'github.com',
       #     path: '/packsaddle/ruby-uri-ssh_git.git'
