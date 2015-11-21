@@ -8,7 +8,7 @@ module URI
       #     host: 'github.com',
       #     path: '/packsaddle/ruby-uri-ssh_git.git'
       #   ).to_s
-      #   => 'git@github.com:packsaddle/ruby-uri-ssh_git.git'
+      #   #=> 'git@github.com:packsaddle/ruby-uri-ssh_git.git'
       #
       # @return [String] git repository url via ssh protocol
       def to_s

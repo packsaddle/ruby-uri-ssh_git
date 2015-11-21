@@ -8,7 +8,7 @@ module URI
   module SshGit
     # @example
     #   url = URI::SshGit.parse('git@github.com:packsaddle/ruby-uri-ssh_git.git')
-    #   => #<URI::SshGit::Generic git@github.com:packsaddle/ruby-uri-ssh_git.git>
+    #   #=> #<URI::SshGit::Generic git@github.com:packsaddle/ruby-uri-ssh_git.git>
     #
     #   url.scheme #=> nil
     #   url.userinfo #=> 'git'
