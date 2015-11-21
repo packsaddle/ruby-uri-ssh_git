@@ -1,7 +1,6 @@
 # URI::SshGit
 
-[![Gem Version](http://img.shields.io/gem/v/uri-ssh_git.svg?style=flat)](http://badge.fury.io/rb/uri-ssh_git)
-[![Build Status](http://img.shields.io/travis/packsaddle/ruby-uri-ssh_git/master.svg?style=flat)](https://travis-ci.org/packsaddle/ruby-uri-ssh_git)
+[![Gem version][gem-image]][gem-url] [![Travis-CI Status][travis-image]][travis-url] [![yard docs][docs-image]][docs-url]
 
 > Parse and build git repository url via ssh protocol.
 
@@ -56,6 +55,11 @@ url.port #=> nil
 ```
 
 
+## API
+
+*[details][docs-url]*.
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -85,3 +89,11 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+
+[travis-url]: https://travis-ci.org/packsaddle/ruby-uri-ssh_git
+[travis-image]: https://img.shields.io/travis/packsaddle/ruby-uri-ssh_git/master.svg?style=flat-square&label=build%20%28linux%29
+[gem-url]: https://rubygems.org/gems/uri-ssh_git
+[gem-image]: http://img.shields.io/gem/v/uri-ssh_git.svg?style=flat-square
+[docs-url]: http://www.rubydoc.info/gems/uri-ssh_git
+[docs-image]: https://img.shields.io/badge/yard-docs-blue.svg?style=flat-square
