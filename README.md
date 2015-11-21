@@ -28,7 +28,7 @@ url.opaque #=> nil
 url.query #=> nil
 url.fragment #=> nil
 
-URI::SshGit.build(
+URI::SshGit::Generic.build(
   userinfo: 'git',
   host: 'github.com',
   path: '/packsaddle/ruby-uri-ssh_git.git'
