@@ -14,6 +14,16 @@ module URI
               )
           end
         end
+        test 'no user' do
+          assert do
+            ::URI::SshGit.parse('example.com:/packsaddle/ruby-uri-ssh_git.git') \
+              == Generic.build(
+                userinfo: '',
+                host: 'example.com',
+                path: '/packsaddle/ruby-uri-ssh_git.git'
+              )
+          end
+        end
       end
     end
   end
