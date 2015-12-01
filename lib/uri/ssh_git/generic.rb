@@ -6,14 +6,15 @@ module URI
       #   Generic.build(
       #     userinfo: 'git',
       #     host: 'github.com',
-      #     path: '/packsaddle/ruby-uri-ssh_git.git'
+      #     path: 'packsaddle/ruby-uri-ssh_git.git'
       #   ).to_s
       #   #=> 'git@github.com:packsaddle/ruby-uri-ssh_git.git'
       #
       # @return [String] git repository url via ssh protocol
       def to_s
-        show_path = path.slice(1..-1) if path.start_with?('/')
-        "#{user}@#{host}:#{show_path}"
+        str = ''
+        str << "#{user}@" if user && !user.empty?
+        str << "#{host}:#{path}"
       end
     end
   end
