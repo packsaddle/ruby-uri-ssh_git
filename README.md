@@ -22,7 +22,7 @@ url.password #=> nil
 url.host #=> 'github.com'
 url.port #=> nil
 url.registry #=> nil
-url.path #=> '/packsaddle/ruby-uri-ssh_git.git'
+url.path #=> 'packsaddle/ruby-uri-ssh_git.git'
 url.opaque #=> nil
 url.query #=> nil
 url.fragment #=> nil
@@ -30,7 +30,7 @@ url.fragment #=> nil
 URI::SshGit::Generic.build(
   userinfo: 'git',
   host: 'github.com',
-  path: '/packsaddle/ruby-uri-ssh_git.git'
+  path: 'packsaddle/ruby-uri-ssh_git.git'
 ).to_s
 #=> 'git@github.com:packsaddle/ruby-uri-ssh_git.git'
 ```
