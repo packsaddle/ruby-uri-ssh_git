@@ -8,9 +8,25 @@ module URI
           params = {
             userinfo: 'git',
             host: 'github.com',
-            path: '/packsaddle/ruby-uri-ssh_git.git'
+            path: 'packsaddle/ruby-uri-ssh_git.git'
           }
           uri = 'git@github.com:packsaddle/ruby-uri-ssh_git.git'
+          assert do
+            Generic.build(params).to_s == uri
+          end
+        end
+      end
+
+      sub_test_case 'leading slash' do
+        # Leading slashes must be preserved as they denote aboslute paths
+        # while an absence denotes relative paths.
+        test '#to_s' do
+          params = {
+            userinfo: 'git',
+            host: 'github.com',
+            path: '/packsaddle/ruby-uri-ssh_git.git'
+          }
+          uri = 'git@github.com:/packsaddle/ruby-uri-ssh_git.git'
           assert do
             Generic.build(params).to_s == uri
           end
