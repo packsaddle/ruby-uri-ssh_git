@@ -13,7 +13,10 @@ module URI
       # @return [String] git repository url via ssh protocol
       def to_s
         show_path = path.slice(1..-1) if path.start_with?('/')
-        "#{user}@#{host}:#{show_path}"
+        result = ''.dup
+        result << "#{user}@" if user && !user.empty?
+        result << "#{host}:#{show_path}"
+        result
       end
     end
   end
