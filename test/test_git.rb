@@ -5,23 +5,25 @@ module URI
     class TestGit < Test::Unit::TestCase
       sub_test_case '.parse' do
         test 'myself' do
+          params = {
+            userinfo: 'git',
+            host: 'github.com',
+            path: '/packsaddle/ruby-uri-ssh_git.git'
+          }
+          uri = 'git@github.com:packsaddle/ruby-uri-ssh_git.git'
           assert do
-            ::URI::SshGit.parse('git@github.com:packsaddle/ruby-uri-ssh_git.git') \
-              == Generic.build(
-                userinfo: 'git',
-                host: 'github.com',
-                path: '/packsaddle/ruby-uri-ssh_git.git'
-              )
+            ::URI::SshGit.parse(uri) == Generic.build(params)
           end
         end
         test 'no user' do
+          params = {
+            userinfo: '',
+            host: 'example.com',
+            path: '/packsaddle/ruby-uri-ssh_git.git'
+          }
+          uri = 'example.com:/packsaddle/ruby-uri-ssh_git.git'
           assert do
-            ::URI::SshGit.parse('example.com:/packsaddle/ruby-uri-ssh_git.git') \
-              == Generic.build(
-                userinfo: '',
-                host: 'example.com',
-                path: '/packsaddle/ruby-uri-ssh_git.git'
-              )
+            ::URI::SshGit.parse(uri) == Generic.build(params)
           end
         end
       end
