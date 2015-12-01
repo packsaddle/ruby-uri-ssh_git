@@ -8,7 +8,7 @@ module URI
           params = {
             userinfo: 'git',
             host: 'github.com',
-            path: '/packsaddle/ruby-uri-ssh_git.git'
+            path: 'packsaddle/ruby-uri-ssh_git.git'
           }
           uri = 'git@github.com:packsaddle/ruby-uri-ssh_git.git'
           assert do
