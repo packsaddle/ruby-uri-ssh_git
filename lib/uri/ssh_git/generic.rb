@@ -12,7 +12,9 @@ module URI
       #
       # @return [String] git repository url via ssh protocol
       def to_s
-        "#{user}@#{host}:#{path}"
+        str = ''
+        str << "#{user}@" if user && !user.empty?
+        str << "#{host}:#{path}"
       end
     end
   end

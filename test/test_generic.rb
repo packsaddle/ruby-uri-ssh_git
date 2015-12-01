@@ -32,6 +32,20 @@ module URI
           end
         end
       end
+
+      sub_test_case 'no user' do
+        test '#to_s' do
+          params = {
+            userinfo: '',
+            host: 'github.com',
+            path: '/packsaddle/ruby-uri-ssh_git.git'
+          }
+          uri = 'github.com:/packsaddle/ruby-uri-ssh_git.git'
+          assert do
+            Generic.build(params).to_s == uri
+          end
+        end
+      end
     end
   end
 end
