@@ -17,7 +17,7 @@ module URI
     #   url.host #=> 'github.com'
     #   url.port #=> nil
     #   url.registry #=> nil
-    #   url.path #=> '/packsaddle/ruby-uri-ssh_git.git'
+    #   url.path #=> 'packsaddle/ruby-uri-ssh_git.git'
     #   url.opaque #=> nil
     #   url.query #=> nil
     #   url.fragment #=> nil
