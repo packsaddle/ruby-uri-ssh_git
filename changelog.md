@@ -1,5 +1,6 @@
-<a name="2.0.0.pre.1"></a>
-# [2.0.0.pre.1](https://github.com/packsaddle/ruby-uri-ssh_git/compare/v1.0.0...v2.0.0.pre.1) (2015-12-03)
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/packsaddle/ruby-uri-ssh_git/compare/v1.0.0...v2.0.0) (2015-12-06)
+
 
 ## Breaking changes
 
@@ -21,6 +22,10 @@ See: [Breaking change about path #14](https://github.com/packsaddle/ruby-uri-ssh
 ## Feature
 
 * **feat:** support user-less URI ([b6abd20](https://github.com/packsaddle/ruby-uri-ssh_git/commit/b6abd20))
+
+
+<a name="2.0.0.pre.1"></a>
+# [2.0.0.pre.1](https://github.com/packsaddle/ruby-uri-ssh_git/compare/v1.0.0...v2.0.0.pre.1) (2015-12-03)
 
 
 <a name="1.0.0"></a>
