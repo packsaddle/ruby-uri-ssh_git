@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "conventional-changelog": "0.4.3",
+    "conventional-changelog": "0.5.1",
     "npm-check-updates": "^2.2.3",
     "urijs": "^1.16.1"
   },
