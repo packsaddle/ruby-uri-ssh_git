@@ -1,6 +1,6 @@
 # URI::SshGit
 
-[![Gem version][gem-image]][gem-url] [![Travis-CI Status][travis-image]][travis-url] [![yard docs][docs-image]][docs-url]
+[![Gem version][gem-image]][gem-url] [![CI Status][ci-image]][ci-url] [![yard docs][docs-image]][docs-url]
 
 > Parse and build git repository url via ssh protocol.
 
@@ -91,8 +91,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 5. Create a new Pull Request
 
 
-[travis-url]: https://travis-ci.org/packsaddle/ruby-uri-ssh_git
-[travis-image]: https://img.shields.io/travis/packsaddle/ruby-uri-ssh_git/master.svg?style=flat-square&label=build%20%28linux%29
+[ci-url]: https://circleci.com/gh/packsaddle/ruby-uri-ssh_git
+[ci-image]: https://img.shields.io/circleci/build/github/packsaddle/ruby-uri-ssh_git?style=flat-square&label=build%20%28linux%29
 [gem-url]: https://rubygems.org/gems/uri-ssh_git
 [gem-image]: http://img.shields.io/gem/v/uri-ssh_git.svg?style=flat-square
 [docs-url]: http://www.rubydoc.info/gems/uri-ssh_git
